@@ -16,8 +16,13 @@ typedef struct NODE {
 node* CreateNode(DataType x);
 void* DLLInit(node** head);
 void DLLPrint(node* head);
+
 void* DLLPushFront(node* head, DataType toinsert);
 void* DLLPopFront(node* head);
 void* DLLPushBack(node* head, DataType toinsert);
 void* DLLPopBack(node* head);
 
+void DLLInsertAfter(node* pos, DataType toinsert);
+void DLLErase(node* pos);
+
+node* DLLFind(node* head, DataType tofind);
